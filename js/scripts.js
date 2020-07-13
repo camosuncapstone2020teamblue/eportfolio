@@ -204,7 +204,7 @@ function checkPswd() {
     var hash = hex_sha1(password).toString();
     
     if (hash == "b798ae336fb3dcd613d73594504712656b0b09a1") {
-      window.location="1home.html";
+      window.location="home.html";
       //alert(hash);
     }
     else{
