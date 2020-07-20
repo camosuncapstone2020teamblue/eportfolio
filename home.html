@@ -12,6 +12,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 body {margin:25px;}
+.button {
+  background-color: #0099ff; 
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+}
+.button:hover {background-color: #0086df}
+#my_centered_buttons { display: flex; justify-content: center; }
 </style>
 <body>
 <!-- Header -->
@@ -67,10 +80,20 @@ body {margin:25px;}
           The sponsor is taking an active role in the development of this project, in that they are writing the content of the playbook. It is up to <span style="color:#0099ff">Team Blue</span> to deliver a <span style="color:#0099ff">website</span> that displays that content, a <span style="color:#0099ff">technical solution</span> that validates the playbook content, and an <span style="color:#0099ff">OpenShift deployment infrastructure</span> to hold the solution.
         </p>
         <p>
-          In order to properly validate a <span style="color:#0099ff">Modern Application Playbook</span>, the team is following strict <span style="color:#0099ff">Agile</span> methodology, employing the recently conceived architecture pattern, <span style="color:#0099ff">Flux</span>, implementing a <span style="color:#0099ff">React</span> front-end, tracking source code changes with <span style="color:#0099ff">Git</span> and <span style="color:#0099ff">GitHub</span>, and using automated deployment with <span style="color:#0099ff">OpenShift</span>.
+          In order to properly deliver and validate a <span style="color:#0099ff">Modern Application Playbook</span>, the team is utlizing the following technologies and concepts:
         </p>
+        <div>
+          <a style="color:#0099ff" target="_blank" href="https://www.atlassian.com/agile">Agile</a> &nbsp;
+          <a style="color:#0099ff" target="_blank" href="https://reactjs.org/">React</a> &nbsp;
+          <a style="color:#0099ff" target="_blank" href="https://nodejs.org/en/">Node.js</a> &nbsp;
+          <a style="color:#0099ff" target="_blank" href="https://jekyllrb.com/">Jekyll</a> &nbsp;
+          <a style="color:#0099ff" target="_blank" href="https://github.com/about">GitHub</a> &nbsp;
+          <a style="color:#0099ff" target="_blank" href="https://pages.github.com/">Github Pages</a> &nbsp;
+          <a style="color:#0099ff" target="_blank" href="https://www.jenkins.io/">Jenkins</a> &nbsp;
+          <a style="color:#0099ff" target="_blank" href="https://www.openshift.com/learn/what-is-openshift">OpenShift</a>
+        </div>
         <p>
-          Our sponsor also gave us the task of <span style="color:#0099ff">coming up with the idea for the solution itself</span>. It was a very unique opportunity to be given freedom to create <span style="color:#0099ff">whatever application we wanted</span>, but we settled on the very practical idea of a web application with the goal of navigating the <span style="color:#0099ff">BC Government News API Service</span> in a more user-friendly way than the pre-existing <span style="color:#0099ff">BC Gov News</span> site. 
+          Our sponsor also gave us the task of <span style="color:#0099ff">coming up with the idea for the solution itself</span>. It was a very unique opportunity to be given freedom to create <span style="color:#0099ff">whatever application we wanted</span>, but we settled on the very practical idea of a web application with the goal of navigating the <a style="color:#0099ff"target="_blank" href="https://catalogue.data.gov.bc.ca/dataset/bc-gov-news-api-service">BC Government News API Service</a> in a more user-friendly way than the pre-existing <span style="color:#0099ff">BC Gov News</span> site. 
         </p>
       </h5>
     </div>
@@ -87,17 +110,11 @@ body {margin:25px;}
 </div>
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
-    <div >
-      <h5>
-        <ul>
-          <li>Playbook Website - <a style="color:#0099ff" target="_blank" href="https://bcgov.github.io/CITZ-IMB-playbook">https://bcgov.github.io/CITZ-IMB-playbook</a> </li>
-          <li>Playbook GitHub - <a style="color:#0099ff" target="_blank" href="https://github.com/bcgov/CITZ-IMB-playbook">https://github.com/bcgov/CITZ-IMB-playbook</a></li>
-          <li>Solution Website - <a style="color:#0099ff" target="_blank" href="https://capstone2020-xordpe-prod.pathfinder.gov.bc.ca">https://capstone2020-xordpe-prod.pathfinder.gov.bc.ca</a></li>
-          <li>Solution GitHub - <a style="color:#0099ff" target="_blank" href="https://github.com/bcgov/CITZ-IMB-Capstone2020">https://github.com/bcgov/CITZ-IMB-Capstone2020</a></li>
-          <li>BC Government News API Service - <a style="color:#0099ff" target="_blank" href="https://catalogue.data.gov.bc.ca/dataset/bc-gov-news-api-service">https://catalogue.data.gov.bc.ca/dataset/bc-gov-news-api-service</a></li>
-          <li>BC Gov News - <a style="color:#0099ff" target="_blank" href="https://news.gov.bc.ca/">https://news.gov.bc.ca/</a></li>
-        </ul>
-      </h5>
+    <div id="my_centered_buttons">
+      <a class="button"  target="_blank" href="https://bcgov.github.io/CITZ-IMB-playbook">Playbook Website</a> &nbsp;
+      <a class="button"  target="_blank" href="https://github.com/bcgov/CITZ-IMB-playbook">Playbook GitHub</a> &nbsp;
+      <a class="button"  target="_blank" href="https://capstone2020-xordpe-prod.pathfinder.gov.bc.ca">Solution Website</a> &nbsp;
+      <a class="button"  target="_blank" href="https://github.com/bcgov/CITZ-IMB-Capstone2020">Solution GitHub</a> &nbsp;
     </div>
   </div>
 </div>
@@ -108,7 +125,7 @@ body {margin:25px;}
       <div class="w3-twothird ">
         <div class="col-md-9">
             <h4 style="text-decoration: underline;" class="my-1"><strong>Josh Dueck</strong></h4>
-            <h5 style="color:#0099ff">Lead Solution Developer</h5>
+            <h5 style="color:#0099ff">Solution Developer</h5>
             <h5>Josh has experience from school in software development and UI design. 
               He hopes to sharpen those skills during this project, to facilitate his dream of one day becoming the CEO of Amazon. Josh brings a healthy and balanced perspective, along with the ability to generate useful and creative ideas.
             </h5>
@@ -121,7 +138,7 @@ body {margin:25px;}
       <div class="w3-twothird">
         <div class="col-md-9">
             <h4 style="text-decoration: underline;"class="my-1"><strong>Murphy Li</strong></h4>
-            <h5 style="color:#0099ff">Lead DevOps Engineer and OpenShift Developer</h5>
+            <h5 style="color:#0099ff">DevOps Engineer and OpenShift Developer</h5>
             <h5>Similar to Josh, Murphy also has good experience in software development from school. Over the course of the project, he hopes to branch from development to DevOps, by mastering the OpenShift platform that the application will live in. Murphy brings his keen ability to learn new technologies to the project.
             </h5>
         </div>
@@ -133,7 +150,7 @@ body {margin:25px;}
       <div class="w3-twothird">
         <div class="col-md-9">
             <h4 style="text-decoration: underline;" class="my-1"><strong>Kelly Marcheluzzo</strong></h4>
-            <h5 style="color:#0099ff">Lead Playbook Website Developer and Scrum Master</h5>
+            <h5 style="color:#0099ff">Playbook Website Developer and Scrum Master</h5>
             <h5>Kelly is career focused and hopes to land a job in the public sector. With a previous co-op in the Federal Government, he is quite happy to also gain exposure to government at the provincial level. Navigating the various levels of procedures and approvals found in the public sector is something he finds challenging yet rewarding.
             </h5>
         </div>
@@ -150,12 +167,13 @@ body {margin:25px;}
       <h1 style="text-decoration: underline;">Agile Project Files</h1>
       <h5 class="w3-padding-32">
           <p>This project generated quite a few Agile-related documents, which can be quite long. We have included them below for your perusal.</p>
-          <ul>
-            <li><a style="color:#0099ff" target="_blank" href="https://camosuncapstone2020teamblue.github.io/eportfolio/files/brochure.pdf">Daily Meetings</a></li>
-            <li><a style="color:#0099ff" target="_blank" href="https://camosuncapstone2020teamblue.github.io/eportfolio/files/brochure.pdf">Weekly Status Reports</a></li>
-            <li><a style="color:#0099ff" target="_blank" href="https://camosuncapstone2020teamblue.github.io/eportfolio/files/brochure.pdf">Sprint Planning Meetings</a></li>
-            <li><a style="color:#0099ff" target="_blank" href="https://camosuncapstone2020teamblue.github.io/eportfolio/files/brochure.pdf">Sprint Retrospective Meetings</a></li>
-          </ul>
+          <br>
+          <div id="my_centered_buttons">
+            <a class="button"  target="_blank" href="https://camosuncapstone2020teamblue.github.io/eportfolio/files/brochure.pdf">Daily Meetings</a> &nbsp;
+            <a class="button"  target="_blank" href="https://camosuncapstone2020teamblue.github.io/eportfolio/files/brochure.pdf">Weekly Status Reports</a> &nbsp;
+            <a class="button"  target="_blank" href="https://camosuncapstone2020teamblue.github.io/eportfolio/files/brochure.pdf">Sprint Planning Meetings</a> &nbsp;
+            <a class="button"  target="_blank" href="https://camosuncapstone2020teamblue.github.io/eportfolio/files/brochure.pdf">Sprint Retro Meetings</a>
+          </div>
       </h5>
     </div>
   </div>
