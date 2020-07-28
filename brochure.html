@@ -12,16 +12,30 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 body {margin:25px;}
+.button {
+  background-color: #0099ff; 
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+}
+.button:hover {background-color: #0086df}
+#my_centered_buttons { display: flex; justify-content: center; }
+#my_centered_imgs { display: flex; justify-content: center; }
 </style>
 <body>
 <!-- Header -->
 <header class="w3-container kelly-blue w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">BC Government Playbook Project</h1>
+  <h1 class="w3-margin w3-jumbo">Team Blue</h1>
+  <h1 class="w3-margin w3-jumbo">BC Government Playbook</h1>
 </header>
-<!-- First Grid / White -->
+<!-- Intro Grid / White -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
-    <h1 style="text-decoration: underline;">Team Blue and the Playbook Project</h1>
     <div class="w3-twothird">
       <h5 class="w3-padding-32">
           <p>Team Blue consists of <span style="color:#0099ff">Josh Dueck</span>, <span style="color:#0099ff">Murphy Li</span>, and <span style="color:#0099ff">Kelly Marcheluzzo</span>.</p>
@@ -36,7 +50,7 @@ body {margin:25px;}
     </div>
   </div>
 </div>
-<!-- First Grid / White -->
+<!-- Quote grid / White -->
 <div class="w3-row-padding  w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="w3-third w3-center">
@@ -53,61 +67,70 @@ body {margin:25px;}
             It provides the <span style="color:#0099ff">Information Management Branch</span> and our partners with key resources that will assist them to identify use and leverage trustworthy sources of knowledge that are regularly improved with the aim of enhancing and simplifying the <span style="color:#0099ff">IT solution delivery experience</span>.
         </p>
       </div>
-    </div>
+    </div>  
   </div>
-<!-- Second Grid / Gray -->
+<!-- Project Grid / Gray -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
-    <h1 style="text-decoration: underline;">The Project</h1>
-    <div class="w3-twothird">
-      <h5 class="w3-padding-32">
-          The <span style="color:#0099ff">BC Government Playbook</span> project's main goal is to produce a playbook that will help guide teams in <span style="color:#0099ff">ideating, developing, and sustaining IT solutions</span>.
-        <p>
-          The sponsor is taking an active role in the development of this project, in that they are writing the content of the playbook. It is up to <span style="color:#0099ff">Team Blue</span> to deliver a <span style="color:#0099ff">website</span> that displays that content, a <span style="color:#0099ff">technical solution</span> that validates the playbook content, and an <span style="color:#0099ff">OpenShift deployment infrastructure</span> to hold the solution.
-        </p>
-        <p>
-          In order to properly validate a <span style="color:#0099ff">Modern Application Playbook</span>, the team is following strict <span style="color:#0099ff">Agile</span> methodology, employing the recently conceived architecture pattern, <span style="color:#0099ff">Flux</span>, implementing a <span style="color:#0099ff">React</span> front-end, tracking source code changes with <span style="color:#0099ff">Git</span> and <span style="color:#0099ff">GitHub</span>, and using automated deployment with <span style="color:#0099ff">OpenShift</span>.
-        </p>
-        <p>
-          Our sponsor also gave us the task of <span style="color:#0099ff">coming up with the idea for the solution itself</span>. It was a very unique opportunity to be given freedom to create <span style="color:#0099ff">whatever application we wanted</span>, but we settled on the very practical idea of a web application with the goal of navigating the <span style="color:#0099ff">BC Government News API Service</span> in a more user-friendly way than the pre-existing <span style="color:#0099ff">BC Gov News</span> site. 
-        </p>
-      </h5>
-    </div>
-    <div class="w3-third w3-center">
-      <a target="_blank" href="https://bcgov.github.io/CITZ-IMB-playbook/">
-        <img style="border-radius: 8px;" height=253px width=500px src="https://camosuncapstone2020teamblue.github.io/eportfolio/img/playbook.png" alt="">
-      </a>
-      <br><br>
-      <a target="_blank" href="https://capstone2020-xordpe-prod.pathfinder.gov.bc.ca/">
-        <img style="border-radius: 8px;" height=253px width=500px src="https://camosuncapstone2020teamblue.github.io/eportfolio/img/solution.png" alt="">
-      </a>
-    </div>
-  </div>
-</div>
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
+    <h1 id="my_centered_buttons" style="text-decoration: underline;">The Project</h1>
     <div >
-      <h5>
-        <ul>
-          <li>Playbook Website - <a style="color:#0099ff" target="_blank" href="https://bcgov.github.io/CITZ-IMB-playbook">https://bcgov.github.io/CITZ-IMB-playbook</a> </li>
-          <li>Playbook GitHub - <a style="color:#0099ff" target="_blank" href="https://github.com/bcgov/CITZ-IMB-playbook">https://github.com/bcgov/CITZ-IMB-playbook</a></li>
-          <li>Solution Website - <a style="color:#0099ff" target="_blank" href="https://capstone2020-xordpe-prod.pathfinder.gov.bc.ca">https://capstone2020-xordpe-prod.pathfinder.gov.bc.ca</a></li>
-          <li>Solution GitHub - <a style="color:#0099ff" target="_blank" href="https://github.com/bcgov/CITZ-IMB-Capstone2020">https://github.com/bcgov/CITZ-IMB-Capstone2020</a></li>
-          <li>BC Government News API Service - <a style="color:#0099ff" target="_blank" href="https://catalogue.data.gov.bc.ca/dataset/bc-gov-news-api-service">https://catalogue.data.gov.bc.ca/dataset/bc-gov-news-api-service</a></li>
-          <li>BC Gov News - <a style="color:#0099ff" target="_blank" href="https://news.gov.bc.ca/">https://news.gov.bc.ca/</a></li>
-        </ul>
+      <h5 class="w3-padding-32">
+          The <span style="color:#0099ff">BC Government Playbook</span> project's main goal was to produce a playbook that will help guide teams in <span style="color:#0099ff">ideating, developing, and sustaining IT solutions</span>.
+        <p>
+          Our sponsor took an active role in the development of this project, in that they wrote the content of the playbook. It was up to <span style="color:#0099ff">Team Blue</span> to deliver a <span style="color:#0099ff">website</span> that displays that content, a <span style="color:#0099ff">technical solution</span> that validates the playbook content, and an <span style="color:#0099ff">OpenShift deployment infrastructure</span> to hold the solution.
+        </p>
+        <p>
+          Our sponsor also gave us the task of <span style="color:#0099ff">coming up with the idea for the solution itself</span>. It was a very unique opportunity to be given freedom to create <span style="color:#0099ff">whatever application we wanted</span>, with the only requirement being that it validates the content of the playbook in some meaningful way. We settled on the very practical idea of a web application with the goal of navigating the <a style="color:#0099ff"target="_blank" href="https://catalogue.data.gov.bc.ca/dataset/bc-gov-news-api-service">BC Government News API Service</a> in a more user-friendly way than the pre-existing <span style="color:#0099ff">BC Gov News</span> site. 
+        </p>
+        <br>
+        <div id="my_centered_imgs">
+          <div>
+            <img style="border-radius: 8px;" height=250px width=500px src="https://camosuncapstone2020teamblue.github.io/eportfolio/img/playbook.png" alt="">
+            <figcaption style="color:#0099ff" id="my_centered_buttons">The Playbook Website</figcaption>
+          </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div>
+            <img style="border-radius: 8px;" height=250px width=500px src="https://camosuncapstone2020teamblue.github.io/eportfolio/img/SolutionV2.png" alt="">
+            <figcaption style="color:#0099ff" id="my_centered_buttons">The Solution</figcaption>
+          </div>
+        </div>
+        <br>
+        <p>
+          In order to properly deliver and validate a <span style="color:#0099ff">Modern Application Playbook</span>, the team utilized the following technologies and concepts:
+        </p>
+        <br>
+        <div id="my_centered_buttons">
+          <a class="button" target="_blank" href="https://www.atlassian.com/agile">Agile</a> &nbsp;&nbsp;
+          <a class="button" target="_blank" href="https://reactjs.org/">React</a> &nbsp;&nbsp;
+          <a class="button" target="_blank" href="https://nodejs.org/en/">Node.js</a> &nbsp;&nbsp;
+          <a class="button" target="_blank" href="https://jekyllrb.com/">Jekyll</a> &nbsp;&nbsp;
+          <a class="button" target="_blank" href="https://github.com/about">GitHub</a> &nbsp;&nbsp;
+          <a class="button" target="_blank" href="https://www.jenkins.io/">Jenkins</a> &nbsp;&nbsp;
+          <a class="button" target="_blank" href="https://www.openshift.com/learn/what-is-openshift">OpenShift</a>
+        </div>
+        <br>
+        <p>
+          <span style="color:#0099ff">Team Blue</span> considers this a very successful project. Please feel free to view our work, and the code behind it, at the links provided below.
+        </p>
       </h5>
+      <div id="my_centered_buttons">
+        <a class="button"  target="_blank" href="https://bcgov.github.io/CITZ-IMB-playbook">Playbook Website</a> &nbsp;&nbsp;
+        <a class="button"  target="_blank" href="https://github.com/bcgov/CITZ-IMB-playbook">Playbook GitHub</a> &nbsp;&nbsp;
+        <a class="button"  target="_blank" href="https://capstone2020-xordpe-prod.pathfinder.gov.bc.ca">Solution Website</a> &nbsp;&nbsp;
+        <a class="button"  target="_blank" href="https://github.com/bcgov/CITZ-IMB-Capstone2020">Solution GitHub</a>
+      </div>
     </div>
   </div>
 </div>
-<!-- Third Grid / White -->
+<!-- Team Grid / White -->
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
-        <h1 style="text-decoration: underline;">The Team</h1>
+        <h1 id="my_centered_buttons" style="text-decoration: underline;">The Team</h1>
+        <br>
       <div class="w3-twothird ">
         <div class="col-md-9">
             <h4 style="text-decoration: underline;" class="my-1"><strong>Josh Dueck</strong></h4>
-            <h5 style="color:#0099ff">Lead Solution Developer</h5>
+            <h5 style="color:#0099ff">Solution Developer</h5>
             <h5>Josh has experience from school in software development and UI design. 
               He hopes to sharpen those skills during this project, to facilitate his dream of one day becoming the CEO of Amazon. Josh brings a healthy and balanced perspective, along with the ability to generate useful and creative ideas.
             </h5>
@@ -120,7 +143,7 @@ body {margin:25px;}
       <div class="w3-twothird">
         <div class="col-md-9">
             <h4 style="text-decoration: underline;"class="my-1"><strong>Murphy Li</strong></h4>
-            <h5 style="color:#0099ff">Lead DevOps Engineer and OpenShift Developer</h5>
+            <h5 style="color:#0099ff">DevOps Engineer and OpenShift Developer</h5>
             <h5>Similar to Josh, Murphy also has good experience in software development from school. Over the course of the project, he hopes to branch from development to DevOps, by mastering the OpenShift platform that the application will live in. Murphy brings his keen ability to learn new technologies to the project.
             </h5>
         </div>
@@ -132,7 +155,7 @@ body {margin:25px;}
       <div class="w3-twothird">
         <div class="col-md-9">
             <h4 style="text-decoration: underline;" class="my-1"><strong>Kelly Marcheluzzo</strong></h4>
-            <h5 style="color:#0099ff">Lead Playbook Website Developer and Scrum Master</h5>
+            <h5 style="color:#0099ff">Playbook Website Developer and Scrum Master</h5>
             <h5>Kelly is career focused and hopes to land a job in the public sector. With a previous co-op in the Federal Government, he is quite happy to also gain exposure to government at the provincial level. Navigating the various levels of procedures and approvals found in the public sector is something he finds challenging yet rewarding.
             </h5>
         </div>
@@ -142,11 +165,11 @@ body {margin:25px;}
       </div>
     </div>
   </div>
-<!-- Final Grid / White -->
+<!-- Thanks Grid / White -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
     <div class="w3-content">
       <div >
-        <h1 style="text-decoration: underline;">Thank You</h1>
+        <h1 id="my_centered_buttons" style="text-decoration: underline;">Thank You</h1>
         <h5 class="w3-padding-32">
             <p><span style="color:#0099ff">Team Blue</span> would like to thank their <span style="color:#0099ff">sponsors</span>, along with <span style="color:#0099ff">Camosun’s ICS faculty</span> and chair, <span style="color:#0099ff">Saryta Schaerer</span>, for their support in this project. </p>
             <p>We've had quite an adventure while making this project a reality, and we are certain that we will look back on our work with pride.</p>
@@ -156,8 +179,8 @@ body {margin:25px;}
   </div>
 <!-- Footer -->
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Capstone 2020: <span style="color:#0099ff">Team Blue</span></h1>
-    <p>Download the PDF of this brochure <a target="_blank" href="https://camosuncapstone2020teamblue.github.io/eportfolio/files/brochure.pdf">here</a>.</p>
+    <h1 class="w3-margin w3-xlarge">Camosun Capstone 2020: <span style="color:#0099ff">Team Blue</span></h1>
+    <p>Download the PDF of this E-Portfolio <a target="_blank" href="https://camosuncapstone2020teamblue.github.io/eportfolio/files/brochure.pdf">here</a>.</p>
 </div>
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
